@@ -47,7 +47,7 @@ html{
 }
 
 .container-hero{
-    background-color:#5ccb5f(--background-color);
+    background-color:#80cf5f(--background-color);
     display: flex;
     justify-content: space-between;
 }

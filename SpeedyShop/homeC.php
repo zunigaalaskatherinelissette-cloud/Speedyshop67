@@ -168,7 +168,7 @@
 
 
 <section class="ofertas-especiales">
-  <h2>Ofertas Especiales</h2>
+  <h2>Super ofertas</h2>
   <p>No te pierdas estas increíbles ofertas</p>
 
   <div class="contenedor-ofertas">

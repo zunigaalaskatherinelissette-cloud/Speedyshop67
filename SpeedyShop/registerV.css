@@ -80,7 +80,7 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /* o 'cover' si quieres que se adapte todo */
-  color: white;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,0 +1,88 @@
+ 
+/*Header*/
+.container-user{
+  background-color: #ffffff;     /* color de fondo verde oscuro */
+  color: rgb(249, 251, 248);                  /* texto blanco */
+  padding: 12px 24px;            /* espacio interno */
+  border: none;                  /* sin borde */
+  border-radius: 10px;            /* bordes redondeados */
+  font-size: 16px;               /* tamaño de letra */
+  cursor: pointer;               /* icono de manito al pasar el mouse */
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #1B5E20;     /* tono más oscuro al pasar el mouse */
+}
+
+.container-hero{
+    background-color:#2fb751(--background-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 2rem 0;
+}
+
+.customer-support{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customer-support i{
+    font-size: 3.3rem;
+}
+
+.content-customer-support{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container-logo i{
+    font-size: 3rem;
+}
+
+.container-logo h1 a{
+    text-decoration: none;
+    color: #4fc720;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.container-user{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer; 
+}
+
+.container-user .fa-user{
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding-right: 2.5rem;
+    border-right: 1px solid #e2e2e2;
+
+}
+
+
+.container-user .fa-basket-shopping{
+    font-size: 3rem;
+    color: var(--primary-color);
+    padding-left: 1rem;
+}
+
+.content-shopping-cart{
+    display: flex;
+    flex-direction: column;
+}

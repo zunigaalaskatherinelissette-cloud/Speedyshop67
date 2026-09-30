@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* Tabla de productos */
+.product-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+    margin: 32px 0;
+}
+
+.product-table th, .product-table td {
+    padding: 18px 16px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.product-table th {
+    background: #e9f5ee;
+    color: #218838;
+    font-weight: 600;
+    border-bottom: 2px solid #21883822;
+}
+
+.product-table tr {
+    transition: background 0.2s;
+}
+
+.product-table tr:hover {
+    background: #f1fdf6;
+}
+
+.product-table td {
+    border-bottom: 1px solid #e9f5ee;
+}
+
+.product-table .product-img-cell img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,128,0,0.08);
+    background: #e9f5ee;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Botones de acción */
+.action-btn {
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 0 4px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.action-btn.edit {
+    background: #e9f5ee;
+    color: #218838;
+    border: 1px solid #21883844;
+}
+
+.action-btn.edit:hover {
+    background: #218838;
+    color: #fff;
+}
+
+.action-btn.delete {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #721c2444;
+}
+
+.action-btn.delete:hover {
+    background: #721c24;
+    color: #fff;
+}
+
+/* Estilos para el header */
+header {
+  background-color: #333;
+  padding: 15px 0;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9800; /* Color al pasar el mouse */
+}
+ 

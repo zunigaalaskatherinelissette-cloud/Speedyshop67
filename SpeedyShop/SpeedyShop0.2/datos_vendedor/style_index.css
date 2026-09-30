@@ -1,0 +1,138 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #e6f4ea;
+    --accent-color: #3a7d44;
+    --accent-dark: #2c5e33;
+    --light-color: #ffffff;
+    --text-color: #2e3b2c;
+    --shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--primary-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--light-color);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.welcome_msg {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-dark);
+}
+
+.heading {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Animación suave en inputs */
+label {
+    font-weight: 500;
+    margin-top: 1rem;
+    display: block;
+    color: var(--accent-dark);
+}
+
+.input_fields {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.input_fields:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 10px rgba(58, 125, 68, 0.25);
+    transform: scale(1.02);
+}
+
+/* Botón con efecto hover */
+.submit_btn {
+    display: inline-block;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 14px;
+    background: var(--accent-color);
+    color: var(--light-color);
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit_btn:hover {
+    background: var(--accent-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(58, 125, 68, 0.4);
+}
+
+/* Mensajes */
+.display_message {
+    background: #d2f5d6;
+    color: var(--accent-dark);
+    padding: 12px;
+    border-left: 5px solid var(--accent-color);
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    position: relative;
+    animation: slideDown 0.5s ease-out;
+}
+
+.display_message i {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+    .submit_btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+    .heading {
+        font-size: 1.5rem;
+    }
+}
